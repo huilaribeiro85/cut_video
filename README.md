@@ -11,3 +11,4 @@ from cut_processor.run import Processor
 Processor().start_threads()
 
 * The program will create the folders were the videos will be inputed to be cutted.
+* just copy videos to folder "videos_to_process"
