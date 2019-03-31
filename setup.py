@@ -9,7 +9,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 
 setup(
-    name='cut_video',
+    name='cut_video_processor',
     version='1.0.0',
     author='Huila Ribeiro',
     install_requires=['requests', 'flask', 'moviepy'])
