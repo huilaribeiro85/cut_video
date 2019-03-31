@@ -1,4 +1,4 @@
-* necessary python on Enviromment Variable
+* necessary python in the Enviromment Variable
 
 install:
 pip install git+https://github.com/huilaribeiro85/cut_video_processor.git
