@@ -1,0 +1,1 @@
+{"processed_video_path": "D:\\python projects\\desafio globo\\video_processor\\processed_videos\\Boogie Oogie veja abertura da novela da Globo das seis - Copia (4)_20190331_090641.mp4", "proc_init_time": "09:06:41;0", "proc_end_time": "09:06:41;29", "video_duration": "00:00:30"}
