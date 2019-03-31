@@ -1,12 +1,12 @@
-How to install?
+* necessary python on Enviromment Variable
+
+install:
 pip install git+https://github.com/huilaribeiro85/cut_video_processor.git
 
 
-how to run?
-* necessary python on Enviromment Variable
+* create a file.py with this content:
 
 _____________________________________________________________
-* create a file.py with this content:
 
 import os
 import subprocess
@@ -38,6 +38,6 @@ while True:
     if start_log_reader and log != start_log_reader:
         log = start_log_reader
         print(start_log_reader)
-        
 _____________________________________________________________
-The program will create the folders were the videos will be inputed to be cutted.
+
+* The program will create the folders were the videos will be inputed to be cutted.
