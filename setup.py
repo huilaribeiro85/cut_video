@@ -12,4 +12,4 @@ setup(
     name='cut_video',
     version='1.0.0',
     author='Huila Ribeiro',
-    install_requires=['requests', 'flask', 'moviepy']
+    install_requires=['requests', 'flask', 'moviepy'])

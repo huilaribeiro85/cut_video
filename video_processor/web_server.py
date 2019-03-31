@@ -60,8 +60,10 @@ def cut_video():
 def log_info(log=LogProcessor()):
     log_path = os.path.join(os.getcwd(), "logs")
     log_file = log.get_last_log(log_path)
-    log_content = log.read_file(log_file)
-    return log_content
+    if log_file:
+        log_content = log.read_file(log_file)
+        return log_content
+    return ""
 
 
 if __name__ == '__main__':

@@ -20,11 +20,15 @@ class GetLog:
         return False
 
     def run(self):
+        if not os.path.exists(self.logs_path):
+            os.mkdir(self.logs_path)
         ret = requests.get("http://localhost:8080/log_info").content
-        print(ret.decode("utf-8"))
+        if ret:
+            print(ret.decode("utf-8"))
         return ret
 
 
 if __name__ == "__main__":
+
     vp = GetLog()
     log_content = vp.run()
