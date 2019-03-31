@@ -1,4 +1,3 @@
-
 from setuptools import setup, find_packages
 from os import path
 
@@ -9,7 +8,9 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 
 setup(
-    name='videoprocessor',
+    name='cut_video_processor',
     version='1.0.0',
     author='Huila Ribeiro',
-    install_requires=['requests', 'flask', 'moviepy'])
+    packages=find_packages(exclude=['tests']),
+    install_requires=['requests', 'flask', 'moviepy']
+)
