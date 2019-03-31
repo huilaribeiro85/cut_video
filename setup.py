@@ -13,4 +13,3 @@ setup(
     version='1.0.0',
     author='Huila Ribeiro',
     install_requires=['requests', 'flask', 'moviepy']
-)
