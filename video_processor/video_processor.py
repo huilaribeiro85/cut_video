@@ -38,6 +38,12 @@ class VideoProcessor:
         self.log_processor.write_log(new_log_file_path, last_log_content)
 
     def run(self):
+        if not os.path.exists(self.processed_videos_path):
+            os.mkdir(self.processed_videos_path)
+        if not os.path.exists(self.videos_to_process_path):
+            os.mkdir(self.videos_to_process_path)
+        if not os.path.exists(self.logs_path):
+            os.mkdir(self.logs_path)
         while True:
             files_to_process = os.listdir(self.videos_to_process_path)
             if files_to_process:
