@@ -3,12 +3,12 @@
 
 import os
 import requests
-from log_processor import LogProcessor
+from cut_processor.cut_processor.log_processor import LogProcessor
 
 
 class GetLog:
-    def __init__(self):
-        self.logs_path = os.path.join(os.getcwd(), "logs")
+    def __init__(self, log_path):
+        self.logs_path = log_path
         self.log_processor = LogProcessor()
 
     def get_log_info(self):
@@ -24,11 +24,9 @@ class GetLog:
             os.mkdir(self.logs_path)
         ret = requests.get("http://localhost:8080/log_info").content
         if ret:
-            print(ret.decode("utf-8"))
-        return ret
-
+            return ret.decode("utf-8")
+        return ""
 
 if __name__ == "__main__":
-
     vp = GetLog()
     log_content = vp.run()

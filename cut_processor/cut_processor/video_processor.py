@@ -4,15 +4,15 @@
 import os
 import requests
 from datetime import datetime
-from log_processor import LogProcessor
+from cut_processor.cut_processor.log_processor import LogProcessor
 
 
 class VideoProcessor:
-    def __init__(self):
+    def __init__(self, logs_path, videos_to_process_path, processed_videos_path):
         self.log_processor = LogProcessor()
-        self.logs_path = os.path.join(os.getcwd(), "logs")
-        self.videos_to_process_path = os.path.join(os.getcwd(), r"videos_to_process")
-        self.processed_videos_path = os.path.join(os.getcwd(), r"processed_videos")
+        self.logs_path = logs_path
+        self.videos_to_process_path = videos_to_process_path
+        self.processed_videos_path = processed_videos_path
 
     def get_log_info(self):
             logs = os.listdir(self.logs_path)

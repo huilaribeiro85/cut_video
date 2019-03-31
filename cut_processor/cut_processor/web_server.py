@@ -5,10 +5,10 @@ import os
 import json
 import shutil
 import time
-import cut_video as cv
 from datetime import datetime
 from flask import Flask, request
-from log_processor import LogProcessor
+from cut_processor.cut_processor import cut_video as cv
+from cut_processor.cut_processor.log_processor import LogProcessor
 
 app = Flask(__name__)
 
